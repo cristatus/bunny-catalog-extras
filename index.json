@@ -1,0 +1,16 @@
+{
+  "packages": {
+    "teleport": {
+      "description": "tsh and tctl, the client tools for Teleport-protected SSH, Kubernetes, and database infrastructure",
+      "kind": "cli",
+      "name": "Teleport",
+      "path": "packages/teleport",
+      "tags": [
+        "remote-access"
+      ],
+      "version": "18.10.7"
+    }
+  },
+  "updated": "2026-08-23T13:54:39Z",
+  "version": 1
+}

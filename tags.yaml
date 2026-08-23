@@ -1,0 +1,7 @@
+# Tag vocabulary for this catalog.
+#
+# `bunny dev validate` rejects any manifest using a tag that is not declared
+# here, which keeps the vocabulary from drifting. Declare a tag before the
+# first manifest that uses it.
+
+remote-access: remote infrastructure access client
