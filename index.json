@@ -40,6 +40,16 @@
       ],
       "version": "1.36.4"
     },
+    "minikube": {
+      "description": "Run a single-node Kubernetes cluster locally on a container or VM driver",
+      "kind": "cli",
+      "name": "minikube",
+      "path": "packages/minikube",
+      "tags": [
+        "kubernetes"
+      ],
+      "version": "1.38.1"
+    },
     "teleport": {
       "description": "tsh and tctl, the client tools for Teleport-protected SSH, Kubernetes, and database infrastructure",
       "kind": "cli",

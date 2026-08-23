@@ -1,0 +1,26 @@
+id: minikube
+name: minikube
+description: Run a single-node Kubernetes cluster locally on a container or VM driver
+version: "1.38.1"
+kind: cli
+tags: [kubernetes]
+homepage: https://minikube.sigs.k8s.io/
+license: Apache-2.0
+
+sources:
+    - url: "https://github.com/kubernetes/minikube/releases/download/v{version}/minikube-linux-amd64"
+      file: "minikube-{version}"
+      sha256: "099477eaf248bcb5bcea8ce78a2898e93ac01461c35189da1848c3de82ecd22e"
+      size: 134891912
+      update:
+        type: github
+        repo: kubernetes/minikube
+        asset: "^minikube-linux-amd64$"
+        tag-pattern: "^v([0-9.]+)$"
+
+prepare:
+    - "mv minikube-{version} {pkg}/minikube"
+    - "chmod +x {pkg}/minikube"
+
+bin:
+    - { name: minikube, path: "{app}/minikube" }
