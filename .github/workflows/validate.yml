@@ -1,0 +1,40 @@
+name: Validate catalog
+
+on:
+  pull_request:
+    paths:
+      - '**/manifest.yaml'
+      - 'index.json'
+      - '.github/workflows/validate.yml'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-go@v6
+        with:
+          go-version: stable
+
+      - name: Install bunny
+        run: |
+          git clone --depth=1 --branch main https://github.com/cristatus/bunny.git "$RUNNER_TEMP/bunny"
+          (cd "$RUNNER_TEMP/bunny" && go install ./cmd/bunny)
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Validate catalog via bunny
+        run: |
+          export BUNNY_HOME="$RUNNER_TEMP/bunny-home"
+          mkdir -p "$BUNNY_HOME"
+          # 'bunny dev' acts on a checkout listed under catalogs:, and the
+          # list is exhaustive, so name this one and nothing else.
+          cat > "$BUNNY_HOME/config.yaml" <<YAML
+          catalogs:
+            - name: extras
+              local: $GITHUB_WORKSPACE
+          YAML
+          bunny dev validate
