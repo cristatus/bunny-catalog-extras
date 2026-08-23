@@ -1,5 +1,15 @@
 {
   "packages": {
+    "helm": {
+      "description": "The package manager for Kubernetes",
+      "kind": "cli",
+      "name": "Helm",
+      "path": "packages/helm",
+      "tags": [
+        "kubernetes"
+      ],
+      "version": "4.2.4"
+    },
     "kubectl": {
       "description": "The Kubernetes command-line tool for running commands against clusters",
       "kind": "cli",
