@@ -7,3 +7,4 @@
 remote-access: remote infrastructure access client
 kubernetes: Kubernetes client tooling
 backup: backup and restore
+storage: cloud storage and file transfer
