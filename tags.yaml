@@ -5,3 +5,4 @@
 # first manifest that uses it.
 
 remote-access: remote infrastructure access client
+kubernetes: Kubernetes client tooling

@@ -1,5 +1,15 @@
 {
   "packages": {
+    "kubectl": {
+      "description": "The Kubernetes command-line tool for running commands against clusters",
+      "kind": "cli",
+      "name": "kubectl",
+      "path": "packages/kubectl",
+      "tags": [
+        "kubernetes"
+      ],
+      "version": "1.36.4"
+    },
     "teleport": {
       "description": "tsh and tctl, the client tools for Teleport-protected SSH, Kubernetes, and database infrastructure",
       "kind": "cli",

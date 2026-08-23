@@ -1,0 +1,27 @@
+id: kubectl
+name: kubectl
+description: The Kubernetes command-line tool for running commands against clusters
+version: "1.36.4"
+kind: cli
+tags: [kubernetes]
+homepage: https://kubernetes.io/docs/reference/kubectl/
+license: Apache-2.0
+
+sources:
+    - url: "https://dl.k8s.io/release/v{version}/bin/linux/amd64/kubectl"
+      file: "kubectl-{version}"
+      sha256: "8b8f088da2dab964f853b38464033b1be15ede2839eca751482357c45abdd05a"
+      size: 59572386
+      update:
+        # stable.txt holds the current release tag and nothing else; the
+        # binary's sha256 sits beside it as a bare-digest sidecar.
+        type: html
+        url: https://dl.k8s.io/release/stable.txt
+        version-pattern: "v([0-9]+\\.[0-9]+\\.[0-9]+)"
+
+prepare:
+    - "mv kubectl-{version} {pkg}/kubectl"
+    - "chmod +x {pkg}/kubectl"
+
+bin:
+    - { name: kubectl, path: "{app}/kubectl" }
