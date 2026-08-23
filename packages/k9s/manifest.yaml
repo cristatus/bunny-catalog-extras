@@ -1,0 +1,28 @@
+id: k9s
+name: k9s
+description: Terminal UI for observing and managing Kubernetes clusters
+version: "0.51.0"
+kind: cli
+tags: [kubernetes]
+homepage: https://k9scli.io/
+license: Apache-2.0
+
+sources:
+    - url: "https://github.com/derailed/k9s/releases/download/v{version}/k9s_Linux_amd64.tar.gz"
+      file: "k9s-{version}.tar.gz"
+      sha256: "c3752ad51a5a4015a113819c4eeb6e55a4d0e4b8e652494797532f6fc8161dd7"
+      size: 41387759
+      update:
+        type: github
+        repo: derailed/k9s
+        asset: "^k9s_Linux_amd64\\.tar\\.gz$"
+        tag-pattern: "^v([0-9.]+)$"
+        # Named checksums.sha256, which is not one of the sidecar names the
+        # github checker probes for on its own.
+        hash-url: "https://github.com/derailed/k9s/releases/download/v{version}/checksums.sha256"
+
+prepare:
+    - "tar xf k9s-{version}.tar.gz -C {pkg} k9s"
+
+bin:
+    - { name: k9s, path: "{app}/k9s" }

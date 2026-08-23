@@ -10,6 +10,16 @@
       ],
       "version": "4.2.4"
     },
+    "k9s": {
+      "description": "Terminal UI for observing and managing Kubernetes clusters",
+      "kind": "cli",
+      "name": "k9s",
+      "path": "packages/k9s",
+      "tags": [
+        "kubernetes"
+      ],
+      "version": "0.51.0"
+    },
     "kubectl": {
       "description": "The Kubernetes command-line tool for running commands against clusters",
       "kind": "cli",
