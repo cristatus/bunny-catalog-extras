@@ -1,0 +1,27 @@
+id: restic
+name: restic
+description: Fast, secure backup program with deduplication, encryption, and pruning
+version: "0.19.1"
+kind: cli
+tags: [backup]
+homepage: https://restic.net/
+license: BSD-2-Clause
+
+sources:
+    - url: "https://github.com/restic/restic/releases/download/v{version}/restic_{version}_linux_amd64.bz2"
+      file: "restic-{version}.bz2"
+      sha256: "f415415624dcc452f2a02b8c33641791a8c6d6d3b65bbb3543fcf9a25151585c"
+      size: 10107515
+      update:
+        type: github
+        repo: restic/restic
+        asset: "^restic_{version}_linux_amd64\\.bz2$"
+        tag-pattern: "^v([0-9.]+)$"
+
+prepare:
+    # Upstream ships the bare binary, bzip2-compressed, not an archive.
+    - "bunzip2 -c restic-{version}.bz2 > {pkg}/restic"
+    - "chmod +x {pkg}/restic"
+
+bin:
+    - { name: restic, path: "{app}/restic" }

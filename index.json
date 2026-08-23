@@ -50,6 +50,16 @@
       ],
       "version": "1.38.1"
     },
+    "restic": {
+      "description": "Fast, secure backup program with deduplication, encryption, and pruning",
+      "kind": "cli",
+      "name": "restic",
+      "path": "packages/restic",
+      "tags": [
+        "backup"
+      ],
+      "version": "0.19.1"
+    },
     "teleport": {
       "description": "tsh and tctl, the client tools for Teleport-protected SSH, Kubernetes, and database infrastructure",
       "kind": "cli",
