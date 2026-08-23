@@ -20,6 +20,16 @@
       ],
       "version": "0.51.0"
     },
+    "kind": {
+      "description": "Run local Kubernetes clusters using Docker or Podman containers as nodes",
+      "kind": "cli",
+      "name": "kind",
+      "path": "packages/kind",
+      "tags": [
+        "kubernetes"
+      ],
+      "version": "0.32.0"
+    },
     "kubectl": {
       "description": "The Kubernetes command-line tool for running commands against clusters",
       "kind": "cli",
