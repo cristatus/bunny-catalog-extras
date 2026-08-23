@@ -9,6 +9,16 @@
         "remote-access"
       ],
       "version": "18.10.7"
+    },
+    "teleport-connect": {
+      "description": "Desktop app for accessing Teleport-protected SSH, Kubernetes, and database infrastructure",
+      "kind": "app",
+      "name": "Teleport Connect",
+      "path": "packages/teleport-connect",
+      "tags": [
+        "remote-access"
+      ],
+      "version": "18.10.7"
     }
   },
   "updated": "2026-08-23T13:54:39Z",

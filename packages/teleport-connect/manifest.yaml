@@ -1,0 +1,45 @@
+id: teleport-connect
+name: Teleport Connect
+description: Desktop app for accessing Teleport-protected SSH, Kubernetes, and database infrastructure
+version: "18.10.7"
+kind: app
+tags: [remote-access]
+homepage: https://goteleport.com/
+license: Apache-2.0
+sources:
+    # Teleport publishes only an apt repo, no portable tarball with a checksum,
+    # so take the .deb from the pool and unpack it on any distro (the Cursor
+    # approach). Pool files are versioned and immutable, so the pin stays valid.
+    - url: "https://apt.releases.teleport.dev/ubuntu/pool/stable/v18/t/teleport-connect/teleport-connect_{version}_amd64.deb"
+      file: "teleport-connect-{version}.deb"
+      sha256: "06eca8fc8d48a3a2f8d55af763a40f5c54c10304826654a86d35cd3466b017d5"
+      size: 135702196
+      update:
+        type: debian
+        root: https://apt.releases.teleport.dev/ubuntu
+        dist: jammy
+        component: stable/v18
+        package-name: teleport-connect
+prepare:
+    - "ar x teleport-connect-{version}.deb"
+    - "tar xf data.tar.xz"
+    # Self-contained Electron bundle: move it wholesale so the binary keeps its
+    # sibling resources (chrome-sandbox, *.pak, locales, libs).
+    - "mv \"opt/Teleport Connect\"/* {pkg}/"
+    - "cp usr/share/icons/hicolor/512x512/apps/teleport-connect.png {pkg}/teleport-connect.png"
+bin:
+    - {name: teleport-connect, path: "{app}/teleport-connect"}
+icons:
+    - {src: "{app}/teleport-connect.png", name: "teleport-connect", size: "512x512"}
+desktop:
+    - id: teleport-connect.desktop
+      name: Teleport Connect
+      genericName: Remote Access Client
+      comment: Desktop application for Teleport-protected infrastructure access
+      exec: "teleport-connect %U"
+      icon: teleport-connect
+      type: Application
+      startupWMClass: Teleport Connect
+      categories: [Network, Development]
+      keywords: [teleport, ssh, kubernetes, database, remote, access]
+      mimeType: [x-scheme-handler/teleport]
