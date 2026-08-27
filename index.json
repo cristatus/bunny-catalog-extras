@@ -28,7 +28,7 @@
       "tags": [
         "kubernetes"
       ],
-      "version": "0.32.0"
+      "version": "0.33.0"
     },
     "kubectl": {
       "description": "The Kubernetes command-line tool for running commands against clusters",
@@ -38,7 +38,7 @@
       "tags": [
         "kubernetes"
       ],
-      "version": "1.36.4"
+      "version": "1.37.0"
     },
     "minikube": {
       "description": "Run a single-node Kubernetes cluster locally on a container or VM driver",
@@ -91,6 +91,6 @@
       "version": "18.11.0"
     }
   },
-  "updated": "2026-08-26T00:28:51Z",
+  "updated": "2026-08-27T05:12:04Z",
   "version": 1
 }
