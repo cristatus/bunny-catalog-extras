@@ -48,7 +48,7 @@
       "tags": [
         "kubernetes"
       ],
-      "version": "1.38.1"
+      "version": "1.39.0"
     },
     "rclone": {
       "description": "Sync files and directories to and from cloud and remote storage providers",
@@ -91,6 +91,6 @@
       "version": "18.11.0"
     }
   },
-  "updated": "2026-08-27T05:12:04Z",
+  "updated": "2026-09-03T01:35:53Z",
   "version": 1
 }
