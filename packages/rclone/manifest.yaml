@@ -1,29 +1,26 @@
 id: rclone
 name: rclone
 description: Sync files and directories to and from cloud and remote storage providers
-version: "1.75.0"
+version: "1.75.1"
 kind: cli
 tags: [storage]
 homepage: https://rclone.org/
 license: MIT
-
 sources:
     - url: "https://github.com/rclone/rclone/releases/download/v{version}/rclone-v{version}-linux-amd64.zip"
       file: "rclone-{version}.zip"
-      sha256: "aa2804e08f48250e71009c727124b6341cd0288465804a9a09d14663cabafbaa"
-      size: 31456234
+      sha256: "982b5aa772841168f8e380f139e9e787b2a105403e32b94da8676a0e1c0a13ab"
+      size: 31470505
       update:
         type: github
         repo: rclone/rclone
         asset: "^rclone-v{version}-linux-amd64\\.zip$"
         tag-pattern: "^v([0-9.]+)$"
-
 prepare:
     # The zip also carries a 6MB README and man page; take only the binary.
     - "unzip -q rclone-{version}.zip rclone-v{version}-linux-amd64/rclone -d {pkg}"
     - "mv {pkg}/rclone-v{version}-linux-amd64/rclone {pkg}/rclone"
     - "rmdir {pkg}/rclone-v{version}-linux-amd64"
     - "chmod +x {pkg}/rclone"
-
 bin:
-    - { name: rclone, path: "{app}/rclone" }
+    - {name: rclone, path: "{app}/rclone"}
