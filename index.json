@@ -8,7 +8,7 @@
       "tags": [
         "kubernetes"
       ],
-      "version": "4.2.4"
+      "version": "4.3.0"
     },
     "k9s": {
       "description": "Terminal UI for observing and managing Kubernetes clusters",
@@ -91,6 +91,6 @@
       "version": "18.11.0"
     }
   },
-  "updated": "2026-09-05T01:30:50Z",
+  "updated": "2026-09-11T01:34:41Z",
   "version": 1
 }
