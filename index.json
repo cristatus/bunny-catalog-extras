@@ -38,7 +38,7 @@
       "tags": [
         "kubernetes"
       ],
-      "version": "1.37.0"
+      "version": "1.37.1"
     },
     "minikube": {
       "description": "Run a single-node Kubernetes cluster locally on a container or VM driver",
@@ -78,7 +78,7 @@
       "tags": [
         "remote-access"
       ],
-      "version": "18.11.1"
+      "version": "18.11.2"
     },
     "teleport-connect": {
       "description": "Desktop app for accessing Teleport-protected SSH, Kubernetes, and database infrastructure",
@@ -88,9 +88,9 @@
       "tags": [
         "remote-access"
       ],
-      "version": "18.11.1"
+      "version": "18.11.2"
     }
   },
-  "updated": "2026-09-16T19:32:01Z",
+  "updated": "2026-09-24T01:44:44Z",
   "version": 1
 }
