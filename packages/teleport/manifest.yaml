@@ -1,7 +1,7 @@
 id: teleport
 name: Teleport
 description: tsh and tctl, the client tools for Teleport-protected SSH, Kubernetes, and database infrastructure
-version: "18.11.2"
+version: "18.11.3"
 kind: cli
 tags: [remote-access]
 homepage: https://goteleport.com/
@@ -14,8 +14,8 @@ sources:
     # unpacked tree.
     - url: "https://apt.releases.teleport.dev/ubuntu/pool/stable/v18/t/teleport/teleport_{version}_amd64.deb"
       file: "teleport-{version}.deb"
-      sha256: "7afa0630ea4596be158d5acfcd38183e0950e274048a5447db0d720b6b47a1d0"
-      size: 224978074
+      sha256: "4d3512764c19c5adef8d42d2fdb2d0febeb93b7781a0d0e256d064fc05492ae9"
+      size: 225031058
       update:
         type: debian
         root: https://apt.releases.teleport.dev/ubuntu

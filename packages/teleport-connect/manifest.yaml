@@ -1,7 +1,7 @@
 id: teleport-connect
 name: Teleport Connect
 description: Desktop app for accessing Teleport-protected SSH, Kubernetes, and database infrastructure
-version: "18.11.2"
+version: "18.11.3"
 kind: app
 tags: [remote-access]
 homepage: https://goteleport.com/
@@ -12,8 +12,8 @@ sources:
     # approach). Pool files are versioned and immutable, so the pin stays valid.
     - url: "https://apt.releases.teleport.dev/ubuntu/pool/stable/v18/t/teleport-connect/teleport-connect_{version}_amd64.deb"
       file: "teleport-connect-{version}.deb"
-      sha256: "5802ae3461c781e2810d45cf39e7eb549b712630efd4a7cda78498061a578fde"
-      size: 137113160
+      sha256: "b4b12c6b6fad20d6157b400b91d7dd067361997fc2a4f75828dd36281afa88e6"
+      size: 137114704
       update:
         type: debian
         root: https://apt.releases.teleport.dev/ubuntu
