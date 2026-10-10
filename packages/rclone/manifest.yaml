@@ -1,7 +1,7 @@
 id: rclone
 name: rclone
 description: Sync files and directories to and from cloud and remote storage providers
-version: "1.75.1"
+version: "1.75.2"
 kind: cli
 tags: [storage]
 homepage: https://rclone.org/
@@ -9,8 +9,8 @@ license: MIT
 sources:
     - url: "https://github.com/rclone/rclone/releases/download/v{version}/rclone-v{version}-linux-amd64.zip"
       file: "rclone-{version}.zip"
-      sha256: "982b5aa772841168f8e380f139e9e787b2a105403e32b94da8676a0e1c0a13ab"
-      size: 31470505
+      sha256: "349ac8fba6ff65d6247043f1750cdcb518ec5d500ef91463a10d37c0ccdf3702"
+      size: 31615572
       update:
         type: github
         repo: rclone/rclone

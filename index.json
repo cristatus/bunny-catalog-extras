@@ -58,7 +58,7 @@
       "tags": [
         "storage"
       ],
-      "version": "1.75.1"
+      "version": "1.75.2"
     },
     "restic": {
       "description": "Fast, secure backup program with deduplication, encryption, and pruning",
@@ -91,6 +91,6 @@
       "version": "18.11.3"
     }
   },
-  "updated": "2026-10-03T02:27:00Z",
+  "updated": "2026-10-10T02:51:47Z",
   "version": 1
 }
