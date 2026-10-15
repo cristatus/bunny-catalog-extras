@@ -1,7 +1,7 @@
 id: helm
 name: Helm
 description: The package manager for Kubernetes
-version: "4.3.0"
+version: "4.3.1"
 kind: cli
 tags: [kubernetes]
 homepage: https://helm.sh/
@@ -9,8 +9,8 @@ license: Apache-2.0
 sources:
     - url: "https://get.helm.sh/helm-v{version}-linux-amd64.tar.gz"
       file: "helm-{version}.tar.gz"
-      sha256: "86584a54def73570558f66f5111cc53dfed56689637ae32c1201205d494f54fb"
-      size: 20321063
+      sha256: "0403a88ae20913d11b10a2467b50087721fea7581736da6b9d3992f5357fe54b"
+      size: 20368240
       update:
         # The GitHub release carries only detached signatures, so read the
         # version from helm's own endpoint and the digest from the tarball's
