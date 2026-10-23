@@ -7,7 +7,7 @@ tags: [storage]
 homepage: https://rclone.org/
 license: MIT
 sources:
-    - url: "https://github.com/rclone/rclone/releases/download/v{version}/rclone-v{version}-linux-amd64.zip"
+    - url: "https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-amd64.zip"
       file: "rclone-{version}.zip"
       sha256: "349ac8fba6ff65d6247043f1750cdcb518ec5d500ef91463a10d37c0ccdf3702"
       size: 31615572

@@ -7,7 +7,7 @@ tags: [kubernetes]
 homepage: https://kind.sigs.k8s.io/
 license: Apache-2.0
 sources:
-    - url: "https://github.com/kubernetes-sigs/kind/releases/download/v{version}/kind-linux-amd64"
+    - url: "https://github.com/kubernetes-sigs/kind/releases/download/v0.33.0/kind-linux-amd64"
       file: "kind-{version}"
       sha256: "aee6151561422756b764a4ae28e7f44cda5af5a9eead3cc9985112b1de8d8e0d"
       size: 10530942
