@@ -38,7 +38,7 @@
       "tags": [
         "kubernetes"
       ],
-      "version": "1.37.1"
+      "version": "1.37.2"
     },
     "minikube": {
       "description": "Run a single-node Kubernetes cluster locally on a container or VM driver",
@@ -91,6 +91,6 @@
       "version": "18.11.7"
     }
   },
-  "updated": "2026-10-23T20:25:00Z",
+  "updated": "2026-10-29T02:59:18Z",
   "version": 1
 }
