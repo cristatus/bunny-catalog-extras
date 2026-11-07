@@ -58,7 +58,7 @@
       "tags": [
         "storage"
       ],
-      "version": "1.75.2"
+      "version": "1.76.0"
     },
     "restic": {
       "description": "Fast, secure backup program with deduplication, encryption, and pruning",
@@ -78,7 +78,7 @@
       "tags": [
         "remote-access"
       ],
-      "version": "18.11.8"
+      "version": "18.11.9"
     },
     "teleport-connect": {
       "description": "Desktop app for accessing Teleport-protected SSH, Kubernetes, and database infrastructure",
@@ -88,9 +88,9 @@
       "tags": [
         "remote-access"
       ],
-      "version": "18.11.8"
+      "version": "18.11.9"
     }
   },
-  "updated": "2026-10-30T03:04:13Z",
+  "updated": "2026-11-07T03:20:19Z",
   "version": 1
 }
