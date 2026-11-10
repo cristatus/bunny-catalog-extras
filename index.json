@@ -78,7 +78,7 @@
       "tags": [
         "remote-access"
       ],
-      "version": "18.11.9"
+      "version": "18.11.10"
     },
     "teleport-connect": {
       "description": "Desktop app for accessing Teleport-protected SSH, Kubernetes, and database infrastructure",
@@ -88,9 +88,9 @@
       "tags": [
         "remote-access"
       ],
-      "version": "18.11.9"
+      "version": "18.11.10"
     }
   },
-  "updated": "2026-11-07T03:20:19Z",
+  "updated": "2026-11-10T04:51:39Z",
   "version": 1
 }
