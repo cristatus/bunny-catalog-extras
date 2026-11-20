@@ -68,7 +68,7 @@
       "tags": [
         "backup"
       ],
-      "version": "0.19.1"
+      "version": "0.20.0"
     },
     "teleport": {
       "description": "tsh and tctl, the client tools for Teleport-protected SSH, Kubernetes, and database infrastructure",
@@ -91,6 +91,6 @@
       "version": "18.11.12"
     }
   },
-  "updated": "2026-11-17T05:19:22Z",
+  "updated": "2026-11-20T04:28:35Z",
   "version": 1
 }
